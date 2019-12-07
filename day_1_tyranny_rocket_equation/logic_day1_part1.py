@@ -6,6 +6,7 @@ def fuel_counter_upper(file):
     fuel_total = 0
     for line in f:
         fuel_total = fuel_total + (math.floor(int(line)/3) - 2)
+    f.close()
     print(fuel_total)
 
 
